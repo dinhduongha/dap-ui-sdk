@@ -105,13 +105,7 @@ public slots:
     void sendBugReport(const QByteArray &data);
     void sendBugReportStatusRequest(const QByteArray &data);
     void getNews();
-
-//    void abortEncryptionInitRequest() { m_netEncryptReply->abort(); }
-//    void abortAuthorizeRequest()      { m_netAuthorizeReply->abort(); }
-//    void abortLogoutRequest()         { m_netLogoutReply->abort();  }
     void sendTxOutRequest(const QString &tx);
-    QString loadTxOutHash();
-    void saveTxOutHash(const QString &tx);
 #ifdef BUILD_VAR_GOOGLE
     void requestPurchaseVerify(const QJsonObject *params);
 #endif

@@ -109,7 +109,9 @@ public slots:
 //    void abortEncryptionInitRequest() { m_netEncryptReply->abort(); }
 //    void abortAuthorizeRequest()      { m_netAuthorizeReply->abort(); }
 //    void abortLogoutRequest()         { m_netLogoutReply->abort();  }
-    void sendTxBackRequest(const QString &tx);
+    void sendTxOutRequest(const QString &tx);
+    QString loadTxOutHash();
+    void saveTxOutHash(const QString &tx);
 #ifdef BUILD_VAR_GOOGLE
     void requestPurchaseVerify(const QJsonObject *params);
 #endif
